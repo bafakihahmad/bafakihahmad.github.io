@@ -1,0 +1,64 @@
+* {
+  padding: 0;
+  margin: 0;
+  font: 1em Verdana; /* default text style */
+  font-weight: bold;
+}
+
+#navbar {
+  background-color: #000080;
+  padding: 25px 0px; /* only padding top and bottom */
+}
+
+#navbar ul {
+  list-style: none;
+  display: flex; /* display as a row */
+}
+
+#navbar ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 25px 25px 23px 25px;
+}
+
+#navbar ul li a:hover {
+  color: goldenrod;
+  background-color: #f9f9f9;
+  border-bottom: 2px solid goldenrod;
+}
+
+/* Push Contact Me to the right */
+#contact-link {
+  margin-left: auto;
+}
+
+#hero-section {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid black;
+}
+
+#hero {
+  padding: 40px 0px;
+  display: flex; /* display content in row */
+  align-items: center;
+  margin: auto;
+  width: 80%;
+}
+
+#hero-text,
+#hero-image {
+  flex: 1; /* each takes 50% */
+  padding: 1rem; /* add spacing inside */
+  box-sizing: border-box;
+  /* font-size: 30px; */
+  font-size: clamp(1.5rem, 5vw, 2rem);
+}
+
+#hero-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* fills container nicely */
+  display: block;
+  /* border-radius: 100%; */
+  border: 10px solid;
+}
